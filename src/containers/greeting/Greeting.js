@@ -39,14 +39,14 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="お問い合わせ" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={greeting.resumeLink}
+                    download="CV_Ngo_Duc_Anh.xlsx"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="職務経歴書をダウンロード" />
                   </a>
                 )}
               </div>

@@ -5,14 +5,6 @@ import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -65,28 +57,49 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
+                    {project.details && (
+                      <dl className="project-details">
+                        {project.details.map(detail => (
+                          <div key={detail.label}>
+                            <dt>{detail.label}</dt>
+                            <dd>{detail.value}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
                   </div>
                 </div>
               );
             })}
           </div>
+          {bigProjects.resourceLinks && (
+            <div
+              className={
+                isDark
+                  ? "dark-mode project-resources project-resources-dark"
+                  : "project-resources"
+              }
+              id="project-resources"
+            >
+              <h2>設計資料・関連資料（代表機能）</h2>
+              <div className="project-resource-groups">
+                {bigProjects.resourceLinks.map(project => (
+                  <div className="project-resource-group" key={project.projectName}>
+                    <h3>{project.projectName}</h3>
+                    <ul>
+                      {project.links.map(link => (
+                        <li key={link.url}>
+                          <a href={link.url} target="_blank" rel="noreferrer">
+                            {link.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Fade>

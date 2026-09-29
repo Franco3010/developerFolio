@@ -34,14 +34,54 @@
 }
 
 .project-card-dark {
+  background-color: $darkBackground;
+  border-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 10px 30px -15px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.25s ease;
 }
 
+.project-card-dark .card-title,
+.project-card-dark .card-subtitle,
+.project-card-dark .project-details dt,
+.project-card-dark .project-details dd {
+  color: $textColorDark;
+}
+
+.project-card-dark .project-details > div {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
 .project-detail {
   text-align: center;
+}
+
+.project-details {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.project-details > div {
+  border-top: 1px solid $lightBorder1;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 105px minmax(0, 1fr);
+  padding: 0.55rem 0;
+}
+
+.project-details dt {
+  color: $subTitle;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.project-details dd {
+  color: $cardSubtitle;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+  overflow-wrap: anywhere;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
@@ -80,6 +120,49 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+}
+
+.project-resources {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+.project-resources h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.project-resource-group {
+  border-top: 1px solid $lightBorder1;
+  padding: 1rem 0;
+}
+
+.project-resource-group h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.project-resource-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-resource-group a {
+  color: $buttonColor;
+  font-size: 0.9rem;
+  text-underline-offset: 3px;
+}
+
+.project-resources-dark .project-resource-group {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-resources-dark .project-resource-group a {
+  color: $textColorDark;
 }
 
 @media (max-width: 768px) {

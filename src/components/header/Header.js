@@ -11,6 +11,8 @@ import {
   blogSection,
   talkSection,
   achievementSection,
+  learningGoals,
+  bigProjects,
   resumeSection
 } from "../../portfolio";
 
@@ -20,6 +22,8 @@ function Header() {
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
+  const viewLearningGoals = learningGoals.display;
+  const viewProjects = bigProjects.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
@@ -41,43 +45,60 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+          {viewProjects && (
+            <li>
+              <a href="#projects">主な開発実績</a>
+            </li>
+          )}
+          {viewProjects && (
+            <li>
+              <a href="#project-resources">設計資料</a>
+            </li>
+          )}
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">スキル</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">職歴</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource">OSS</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">資格・実績</a>
+            </li>
+          )}
+          {viewLearningGoals && (
+            <li>
+              <a href="#learning-goals">今後の学習目標</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">ブログ</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks">登壇</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href={greeting.resumeLink} download="CV_Ngo_Duc_Anh.xlsx">
+                職務経歴書をダウンロード
+              </a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">連絡先</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -20,26 +20,19 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Ngo Duc Anh",
+  title: "はじめまして、アインと申します。",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "エンジニアとして2年半の経験があり、1年目はバックエンド、2年目はバックエンドとフロントエンドを担当しました。これまで独学でJLPTに挑戦し、一度も不合格になったことがありません。その自信をもとに、昨年会社を退職して日本語学習に集中し、2025年12月にJLPT N2に合格しました。現在はBrSEインターンとして働いています。今後は技術力だけでなく、日本語力も伸ばしたいです。よろしくお願いいたします。"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "/CV_Ngo_Duc_Anh.xlsx",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  gmail: "ducanhngo3010@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,75 +41,19 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "スキル",
+  subTitle: "バックエンド開発を中心とした技術と語学力",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "言語・フレームワーク：Node.js、NestJS、TypeScript、Next.js、Java、Spring Boot",
+    "データベース：PostgreSQL、MongoDB",
+    "ツール：TypeORM、Swagger、GitLab、Bull、Firebase、Git、Postman",
+    "言語力：日本語（JLPT N2）、英語（Aptis B2）"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+  softwareSkills: [],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -126,23 +63,11 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "ハノイ工科大学（HUST）",
+      subHeader: "ソフトウェア工学科",
+      duration: "2022年卒業",
+      desc: "",
+      descBullets: []
     }
   ]
 };
@@ -150,21 +75,8 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
+  viewSkillBars: false,
+  experience: [],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
@@ -174,29 +86,39 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "正社員",
+      company: "Hisoft Company",
+      date: "2022年9月〜2023年10月",
+      desc: "",
+      descBullets: []
+    },
+    {
+      role: "正社員",
+      company: "Locamos Company",
+      date: "2024年1月〜2025年4月",
+      desc: "",
+      descBullets: []
+    },
+    {
+      role: "日本語学習・BrSE研修",
+      company: "就業なし（学習期間）",
+      date: "2025年5月〜2026年7月",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "前半（2025年5月〜12月）：就業せず、日本語を独学で学習し、JLPT N2に合格。",
+        "後半（2026年1月〜7月）：VIETISのBrSE研修を受講。"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "BrSEインターン",
+      company: "VIETIS Corporation",
+      date: "2026年7月〜現在",
+      desc: "会計システム開発プロジェクトに参加。",
+      descBullets: [
+        "お客様から頂いた基本設計に基づいてQAを作成し、同僚にレビューを依頼",
+        "週次報告書の作成、開発者とのQA対応",
+        "基本設計内容のベトナム語翻訳"
+      ]
     }
   ]
 };
@@ -205,37 +127,71 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false",
+  display: false
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "主な開発実績",
+  subtitle: "前職で担当したプロジェクト",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+      projectName: "LCGコイン管理システム（LOCAGO）",
+      projectDesc: "仮想通貨（コイン）を管理するWebサービス。5名体制のチームで、データベース設計からREST API開発までを担当しました。",
+      details: [
+        {label: "対象ユーザー", value: "エンドユーザー、管理者（ユーザー向けシステム・管理システム）"},
+        {label: "使用技術", value: "Node.js、NestJS、Next.js、TypeScript、PostgreSQL、MongoDB"},
+        {label: "技術選定の理由", value: "PostgreSQLは、業務内容が明確でテーブル構造が変わりにくいデータに適しており、制約・トランザクション・分離レベルによってデータの正確性を保てるため、金銭に関わる機能に採用しました。MongoDBは更新頻度が低いシンプルな業務データに使用し、関連データを1つのドキュメントにまとめることで、複数テーブルの結合を避け、データ取得を効率化しました。"},
+        {label: "担当範囲", value: "データベース設計、REST API開発、日利計算機能、Excel出力機能、管理画面の一部実装"},
+        {label: "役割", value: "バックエンド"},
+        {label: "期間", value: "2024年1月〜2025年4月"}
+      ],
+    },
+    {
+      projectName: "不動産仲介システム（RECBOOK）",
+      projectDesc: "不動産仲介業務を支援するWebサービス。5名体制のチームで、REST API開発、データベースマイグレーション管理、社内チーム向け通知機能を担当しました。",
+      details: [
+        {label: "対象ユーザー", value: "エンドユーザー"},
+        {label: "使用技術", value: "Node.js、NestJS、TypeScript、PostgreSQL、Firebase、Bull、GitLab"},
+        {label: "担当範囲", value: "REST API開発、データベースマイグレーション管理、社内チーム向け通知機能、ユーザー別レポート集計機能"},
+        {label: "役割", value: "バックエンド・フロントエンド"},
+        {label: "期間", value: "2022年9月〜2023年10月"},
+        {label: "補足", value: "ER図は概要把握を目的としており、SQLの項目はすべて記載していません。"}
+      ],
+    },
+    {
+      projectName: "eSIM管理システム",
+      projectDesc: "eSIM管理を行うWebサービス。2名体制のチームで、Spring BootとMongoDBによるバックエンド開発、管理者・ユーザー管理機能、eSIM関連機能を担当しました。",
+      details: [
+        {label: "対象ユーザー", value: "管理者"},
+        {label: "使用技術", value: "Java、Spring Boot、Next.js、MongoDB"},
+        {label: "担当範囲", value: "バックエンド開発、管理者・ユーザー管理、eSIM情報照会、通信キャリアAPI連携、料金プラン管理"},
+        {label: "役割", value: "バックエンド・フロントエンド"},
+        {label: "期間", value: "2024年6月（3週間）"}
+      ],
+    }
+  ],
+  resourceLinks: [
+    {
+      projectName: "LCGコイン管理システム（LOCAGO）",
+      links: [
+        {name: "日利計算のER図", url: "https://dbdiagram.io/d/日利計算に関するテーブル-6abbbbbf5869425612ca5f6e"},
+        {name: "送金制限のER図", url: "https://dbdiagram.io/d/6abbb9155869425612ca2f2b"}
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+      projectName: "不動産仲介システム（RECBOOK）",
+      links: [
+        {name: "お知らせ・レポート機能のER図", url: "https://dbdiagram.io/d/6abbab815869425612c943f1"},
+        {name: "お知らせ機能の改善資料", url: "https://docs.google.com/presentation/d/1wKKvknaEZcUi7rgSGoDZ4POWOXm0ExbL/edit?usp=sharing&ouid=116077687996630705551&rtpof=true&sd=true"}
+      ]
+    },
+    {
+      projectName: "eSIM管理システム",
+      links: [
+        {name: "データベース設計の説明", url: "https://docs.google.com/document/d/1c7ophKIyPc7soRgJ9eb0EubbJ5hbFZ4oeQly4GEh4zw/edit?usp=sharing"}
       ]
     }
   ],
@@ -246,61 +202,39 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: "資格・実績",
+  subtitle: "取得資格",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "JLPT N2",
+      subtitle: "2025年12月取得",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "証明書を見る",
+          url: "https://photos.app.goo.gl/iidrUKkEbceUTVo86"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Aptis English B2",
+      subtitle: "2022年取得",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "証明書を見る",
+          url: "https://photos.app.goo.gl/MiPa9CSVxYKh4RPUA"
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
+};
+
+const learningGoals = {
+  title: "今後の学習目標",
+  description:
+    "JavaやAWSサービスは実務経験が限られているため、今後機会があれば積極的に取り組みたいと考えています。",
+  display: true
 };
 
 // Blogs Section
@@ -324,7 +258,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Talks Sections
@@ -343,7 +277,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Podcast Section
@@ -356,31 +290,30 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+  title: "職務経歴書",
+  subtitle: "職務経歴書をダウンロード",
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  title: "連絡先",
+  subtitle: "ご連絡はメールにてお願いいたします。",
+  number: "",
+  email_address: "ducanhngo3010@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -397,6 +330,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  learningGoals,
   blogSection,
   talkSection,
   podcastSection,
