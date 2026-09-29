@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
     "エンジニアとして2年半の経験があり、1年目はバックエンド、2年目はバックエンドとフロントエンドを担当しました。これまで独学でJLPTに挑戦し、一度も不合格になったことがありません。その自信をもとに、昨年会社を退職して日本語学習に集中し、2025年12月にJLPT N2に合格しました。現在はBrSEインターンとして働いています。今後は技術力だけでなく、日本語力も伸ばしたいです。よろしくお願いいたします。"
   ),
-  resumeLink: "/CV_Ngo_Duc_Anh.xlsx",
+  resumeLink: "https://Franco3010.github.io/developerFolio/CV_Ngo_Duc_Anh.xlsx",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
