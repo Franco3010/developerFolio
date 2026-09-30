@@ -157,11 +157,23 @@
   text-underline-offset: 3px;
 }
 
+.project-resource-note {
+  margin-top: 0.75rem;
+  color: $cardSubtitle;
+  font-size: 0.78rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
 .project-resources-dark .project-resource-group {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
 .project-resources-dark .project-resource-group a {
+  color: $textColorDark;
+}
+
+.project-resources-dark .project-resource-note {
   color: $textColorDark;
 }
 

@@ -82,6 +82,15 @@ export default function StartupProject() {
               id="project-resources"
             >
               <h2>設計資料・関連資料（代表機能）</h2>
+              {bigProjects.documentNote && (
+                <p
+                  className={
+                    isDark ? "dark-mode project-resource-note" : "project-resource-note"
+                  }
+                >
+                  {bigProjects.documentNote}
+                </p>
+              )}
               <div className="project-resource-groups">
                 {bigProjects.resourceLinks.map(project => (
                   <div className="project-resource-group" key={project.projectName}>

@@ -160,8 +160,7 @@ const bigProjects = {
         {label: "使用技術", value: "Node.js、NestJS、TypeScript、PostgreSQL、Firebase、Bull、GitLab"},
         {label: "担当範囲", value: "REST API開発、データベースマイグレーション管理、社内チーム向け通知機能、ユーザー別レポート集計機能"},
         {label: "役割", value: "バックエンド・フロントエンド"},
-        {label: "期間", value: "2022年9月〜2023年10月"},
-        {label: "補足", value: "ER図は概要把握を目的としており、SQLの項目はすべて記載していません。"}
+        {label: "期間", value: "2022年9月〜2023年10月"}
       ],
     },
     {
@@ -198,6 +197,7 @@ const bigProjects = {
       ]
     }
   ],
+  documentNote: "(ER図は概念確認のための参考資料であり、実際のSQL定義や項目をすべて記載しているものではありません)",
   display: true // Set false to hide this section, defaults to true
 };
 
